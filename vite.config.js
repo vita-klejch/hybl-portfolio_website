@@ -8,6 +8,7 @@ export default defineConfig({
     port: 4000,
   },
   root: "src",
+  base: "/hybl-portfolio_website/",
   publicDir: "../public",
   build: {
     server: {
