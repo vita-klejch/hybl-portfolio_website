@@ -25,14 +25,8 @@ export default defineConfig({
       output: {
         assetFileNames: (assetInfo) => {
           let extType = assetInfo.name.split(".").at(1);
-          // console.log(assetInfo.name.split(".").at(2));
-          // console.log(path);
-          // let extType2 = assetInfo.name.split(".").at(2);
           if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-            // extType2 = assetInfo.name.split(".").at(2);
             return `assets/img/[name][extname]`;
-            // if (extType2) {
-            // }
           }
           return `assets/${extType}/[name]-[hash][extname]`;
         },
