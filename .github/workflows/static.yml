@@ -41,6 +41,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
+          VITE_BASE_URL: 'https://vita-klejch.github.io/hybl-portfolio_website'
           VITE_FORM_TARGET : 'https://formsubmit.co/004f5bd638f1094e44bcdc31f2be5c16'
           VITE_FORM_REDIRECT: 'https://vita-klejch.github.io/hybl-portfolio_website/info.html'
       - name: Setup Pages
