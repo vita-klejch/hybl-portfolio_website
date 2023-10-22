@@ -8,18 +8,19 @@ export default defineConfig({
     port: 4000,
   },
   root: "src",
-  base: "/hybl-portfolio_website/",
+  base: "/hybl-portfolio_website/", // THIS MUST BE SET WHEN deploying on GITHUB PAGES, not for LOCAL TESTING
   publicDir: "../public",
   build: {
-    server: {
-      port: 4000,
-    },
+    // server: {
+    //   port: 4000,
+    // },
     outDir: "../dist",
     emptyOutDir: true,
     rollupOptions: {
       input: {
         index: "src/index.html",
         gallery: "src/test-galerie.html",
+        info: "src/info.html",
       },
       output: {
         assetFileNames: (assetInfo) => {

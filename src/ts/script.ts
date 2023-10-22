@@ -52,3 +52,5 @@ const moveCarousel = () => {
 // sets automatic carousel - change img after 4 seconds
 // document.addEventListener("click", moveCarousel);
 setInterval(moveCarousel, 4000);
+
+console.log("test");

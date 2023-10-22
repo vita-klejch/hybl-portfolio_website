@@ -371,7 +371,6 @@ p {
   max-width: 220px;
   -o-object-fit: contain;
      object-fit: contain;
-  overflow: visible;
 }
 .reference__card-group {
   display: flex;

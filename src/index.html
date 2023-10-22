@@ -277,11 +277,7 @@
           </div>
         </div>
         <p>Pro konkrétní cenovou nabídku mě prosím kontaktujte zde:</p>
-        <form
-          class="form"
-          action="https://formsubmit.co/004f5bd638f1094e44bcdc31f2be5c16"
-          method="POST"
-        >
+        <form class="form" action="%VITE_FORM_TARGET%" method="POST">
           <div class="form__input-container">
             <label class="form__label" for="form-name">Jméno</label><br />
             <input
@@ -316,11 +312,7 @@
               placeholder="Vaše zpráva"
             ></textarea>
             <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="hidden"
-              name="_next"
-              value="http://127.0.0.1:4000/info.html"
-            />
+            <input type="hidden" name="_next" value="%VITE_FORM_REDIRECT%" />
           </div>
           <div>
             <div class="align-center">
